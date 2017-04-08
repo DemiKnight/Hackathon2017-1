@@ -1,0 +1,11 @@
+{
+  "name": "Brain-Hack",
+  "version": "0.0.1",
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  },
+  "scripts": {
+  "start": "electron ."
+  }
+}
