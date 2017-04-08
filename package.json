@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "main": "main.js",
   "devDependencies": {
-    "electron": "~1.6.2"
+    "electron": "~1.6.2",
+    "jquery": "~3.2.1",
+    "bootsrap": "~3.3.7"
   },
   "scripts": {
   "start": "electron ."
