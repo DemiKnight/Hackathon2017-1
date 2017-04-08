@@ -1,7 +1,8 @@
 const { app, BrowserWindow } = require('electron');
+//global.jQuery = require('jquery');
 const path = require('path');
 const url = require('url');
-const jquery = require("jsdom").env("", function(err, window) {
+/*const jquery = require("jsdom").env("", function(err, window) {
     if (err) {
         console.error(err);
         return;
@@ -9,7 +10,8 @@ const jquery = require("jsdom").env("", function(err, window) {
 
     var $ = require("jquery")(window);
 });
-const boot = require('bootstrap');
+*/
+//const boot = require('bootstrap');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -27,7 +29,7 @@ function createWindow () {
     }));
 
     // Open the DevTools.
-    //win.webContents.openDevTools()
+    win.webContents.openDevTools()
 
     // Emitted when the window is closed.
     win.on('closed',
