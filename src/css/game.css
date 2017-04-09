@@ -17,6 +17,13 @@ table{
     float: none;
 }
 
+.originalColorButton{
+    background-image: linear-gradient(to bottom, #337ab7 0, #265a88 100%);
+}
+.pulseRed{
+    background-color: red;
+}
+
 /*#memorygame{*/
     /*width: 100%;*/
     /*height: auto;*/
