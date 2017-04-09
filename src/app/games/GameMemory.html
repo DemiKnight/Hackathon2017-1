@@ -11,12 +11,13 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
 
+
     <script>window.$ = window.jQuery = require('../../../node_modules/jquery/dist/jquery.min.js');</script>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script> -->
 
     <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!--<script src="../../js/MemoryGame.js" role=""></script>-->
+    <script src="../../js/MemoryGame.js"></script>
 
 </head>
 <body>
@@ -84,9 +85,38 @@
 
             <div class="col-md-4 col-md-offset-4 vcenter">
                 <div class="thumbnail">
-                    <canvas id="memoryGame">
 
-                    </canvas>
+                    <div>
+                        <h2>Bordered Table</h2>
+                        <table class="table table-bordered" width="100%">
+                            <!--<thead>-->
+                            <!--<tr>-->
+                                <!--<th>Button 1</th>-->
+                                <!--<th>Button 2</th>-->
+                                <!--<th>Button 3</th>-->
+                            <!--</tr>-->
+                            <!--</thead>-->
+                            <tbody>
+                            <tr>
+                                <td align="center"><button id="btn1" onclick="buttonPressed(1)" type="button" class="btn btn-primary"><h4>Button 1</h4></button></td>
+                                <td align="center"><button id="btn2" onclick="buttonPressed(2)" type="button" class="btn btn-primary"><h4>Button 2</h4></button></td>
+                                <td align="center"><button id="btn3" onclick="buttonPressed(3)" type="button" class="btn btn-primary"><h4>Button 3</h4></button></td>
+                            </tr>
+                            <tr>
+                                <td align="center"><button id="btn4" onclick="buttonPressed(4)" type="button" class="btn btn-primary"><h4>Button 4</h4></button></td>
+                                <td align="center"><button id="btn5" onclick="buttonPressed(5)" type="button" class="btn btn-primary"><h4>Button 5</h4></button></td>
+                                <td align="center"><button id="btn6" onclick="buttonPressed(6)" type="button" class="btn btn-primary"><h4>Button 6</h4></button></td>
+                            </tr>
+                            <tr>
+                                <td align="center"><button id="btn7" onclick="buttonPressed(7)" type="button" class="btn btn-primary"><h4>Button 7</h4></button></td>
+                                <td align="center"><button id="btn8" onclick="buttonPressed(8)" type="button" class="btn btn-primary"><h4>Button 8</h4></button></td>
+                                <td align="center"><button id="btn9" onclick="buttonPressed(9)" type="button" class="btn btn-primary"><h4>Button 9</h4></button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    <!--<canvas id="memoryGame">-->
+
+                    <!--</canvas>-->
                 </div> <!-- This is the box containing the canvas -->
             </div> <!-- This is the column containing the box, containing the column -->
 
@@ -97,57 +127,50 @@
 </body>
 </html>
 
-<script>
+<!--<script>-->
 
-    $(function() {
-        $('.').matchHeight(false);
-    });
+<!--//    window.onload = function{-->
+<!--//        drawSquares();-->
+<!--//    };-->
 
-//    window.onload = function{
-//        drawSquares();
-//    };
-
-    var canvas = document.getElementById("memoryGame");
-    var ctx = canvas.getContext("2d");
+    <!--var canvas = document.getElementById("memoryGame");-->
+    <!--var ctx = canvas.getContext("2d");-->
 
 
-    function drawSquares(){
-        ctx.beginPath();
-        ctx.rect(120,40,50,50);
-        ctx.fillStyle = "#FF0000";
-        ctx.fill();
-        ctx.closePath();
+<!--//    function drawSquares(){-->
+<!--//        ctx.beginPath();-->
+<!--//        ctx.rect(120,40,50,50);-->
+<!--//        ctx.fillStyle = "#FF0000";-->
+<!--//        ctx.fill();-->
+<!--//        ctx.closePath();-->
+<!--//-->
+<!--//    } setInterval(drawSquares(), 20);-->
 
-    } setInterval(drawSquares(), 20);
+<!--//ctx.beginPath();-->
+<!--//ctx.rect(120,40,50,50);-->
+<!--//ctx.fillStyle = "#FF0000";-->
+<!--//ctx.fill();-->
+<!--//ctx.closePath();-->
 
-ctx.beginPath();
-ctx.rect(120,40,50,50);
-ctx.fillStyle = "#FF0000";
-ctx.fill();
-ctx.closePath();
+    <!--/*-->
+    <!--ctx.beginPath();-->
+    <!--ctx.rect(120,40,50,50);-->
+    <!--ctx.fillStyle = "#FF0000";-->
+    <!--ctx.fill();-->
+    <!--ctx.closePath();-->
 
-
-function
-
-    /*
-    ctx.beginPath();
-    ctx.rect(120,40,50,50);
-    ctx.fillStyle = "#FF0000";
-    ctx.fill();
-    ctx.closePath();
-
-    ctx.beginPath();
-    ctx.rect(220,80,50,50);
-    ctx.strokeStyle = "#44e1ff";
-    ctx.stroke();
-    ctx.closePath();
+    <!--ctx.beginPath();-->
+    <!--ctx.rect(220,80,50,50);-->
+    <!--ctx.strokeStyle = "#44e1ff";-->
+    <!--ctx.stroke();-->
+    <!--ctx.closePath();-->
 
 
-    ctx.beginPath();
-    ctx.arc(240,160,20,0, Math.PI * 2, false);
-    ctx.fillStyle = "green";
-    ctx.fill();
-    ctx.closePath();
-    */
+    <!--ctx.beginPath();-->
+    <!--ctx.arc(240,160,20,0, Math.PI * 2, false);-->
+    <!--ctx.fillStyle = "green";-->
+    <!--ctx.fill();-->
+    <!--ctx.closePath();-->
+    <!--*/-->
 
-</script>
+<!--</script>-->

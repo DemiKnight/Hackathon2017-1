@@ -8,7 +8,9 @@ canvas{
     /*height: auto;*/
     height: auto;
 }
-
+table{
+    width: auto;
+}
 .vcenter{
     display: table-cell;
     vertical-align: middle;
