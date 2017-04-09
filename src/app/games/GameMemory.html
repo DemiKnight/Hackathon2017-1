@@ -13,10 +13,10 @@
 
     <script>window.$ = window.jQuery = require('../../../node_modules/jquery/dist/jquery.min.js');</script>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+
     <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!--<script src="../../js/MemoryGame.js" role=""></script>-->
-
-
 
 </head>
 <body>
@@ -84,10 +84,7 @@
 
             <div class="col-md-4 col-md-offset-4 vcenter">
                 <div class="thumbnail">
-                    <canvas height="480" width="600" id="memoryGame" onload="drawSquares()">
-
-
-
+                    <canvas id="memoryGame">
 
                     </canvas>
                 </div> <!-- This is the box containing the canvas -->
@@ -100,19 +97,17 @@
 </body>
 </html>
 
-
-
-
 <script>
 
-    window.onload = function{
-        drawSquares()
-    };
+    $(function() {
+        $('.').matchHeight(false);
+    });
+
+//    window.onload = function{
+//        drawSquares();
+//    };
 
     var canvas = document.getElementById("memoryGame");
-
-
-
     var ctx = canvas.getContext("2d");
 
 
@@ -123,8 +118,16 @@
         ctx.fill();
         ctx.closePath();
 
-    }
+    } setInterval(drawSquares(), 20);
 
+ctx.beginPath();
+ctx.rect(120,40,50,50);
+ctx.fillStyle = "#FF0000";
+ctx.fill();
+ctx.closePath();
+
+
+function
 
     /*
     ctx.beginPath();
