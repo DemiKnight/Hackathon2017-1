@@ -1,0 +1,20 @@
+canvas{
+    /*background: #eeeeee;*/
+    background: transparent;
+    display: block;
+    margin: 0 auto;
+}
+
+.vcenter{
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+/*#memoryGame{*/
+    /*position: absolute;*/
+    /*height: auto;*/
+    /*width: auto;*/
+/*}*/
+/*#CanvasContainer{*/
+
+/*}*/
